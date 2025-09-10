@@ -61,8 +61,11 @@ public class Main {
             // We'll introduce lowercase here because we won't normally use Caps anyway
             if (feeling.toLowerCase().contains("good") ||
                     feeling.toLowerCase().contains("great") ||
-                    feeling.toLowerCase().contains("i'm fine, thanks") ||
-                    feeling.toLowerCase().contains("i'm alright")) {
+                    feeling.toLowerCase().contains("fine") ||
+                    feeling.toLowerCase().contains("fantastic") ||
+                    feeling.toLowerCase().contains("marvelous") ||
+                    feeling.toLowerCase().contains("chill") ||
+                    feeling.toLowerCase().contains("alright")) {
 
                 System.out.println("ChatBot: I'm glad to hear that!");
             } else {
@@ -73,17 +76,35 @@ public class Main {
             System.out.print("You: ");
             String hobby = scanner.nextLine();
 
-            if (hobby.toLowerCase().contains("bike riding") ||
-                    hobby.toLowerCase().contains("philosophy") ||
-                    hobby.toLowerCase().contains("basketball") ||
-                    hobby.toLowerCase().contains("football") ||
-                    hobby.toLowerCase().contains("math") ||
-                    hobby.toLowerCase().contains("coding") ||
-                    hobby.toLowerCase().contains("music")) {
-
-                System.out.println("ChatBot: That's so cool! I used to love " + hobby + " back when I was younger... But that was tens of years ago.");
-            } else {
-                System.out.println("ChatBot: Sounds fancy! Always nice to see talented youngsters like you. I should try that sometime, too.");
+            if (hobby.toLowerCase().contains("bike riding")) {
+                System.out.println("ChatBot: That's so cool! I still love it to this day. ");
+                }
+                else if (hobby.toLowerCase().contains("music")) {
+                System.out.println("Now that's a hobby for a lifetime. A musician is what I wanted to be once, and I was pretty close. I guess there's a reason I chose coding instead...");
+                }
+                else if (hobby.toLowerCase().contains("philosophy")) {
+                System.out.println("Spot on! I would talk about Descartes when I wanted to show off... in middle school.");
+                }
+                else if (hobby.toLowerCase().contains("math")) {
+                System.out.println("Man, math is beautiful. It's a gym for the mind, for sure. Hit me up if you want an Integration Bee showdown.");
+                }
+                else if (hobby.toLowerCase().contains("sports")) {
+                System.out.println("Oh, good for you! I feel like my body is crying for sports inside.");
+                }
+                else if (hobby.toLowerCase().contains("basketball")) {
+                System.out.println("Yeah, I feel you. I feel like I have some deep connection with basketball, too. I just seem to like badminton more. But if you're shooting the hoops and need company, I'm down.");
+                }
+                else if (hobby.toLowerCase().contains("football")) {
+                System.out.println("Hehe, all my friends like football. Doesn't click for me, though. It's only fun when I'm watching it.");
+                }
+                else if (hobby.toLowerCase().contains("photography")) {
+                System.out.println("Yes, yes, yes. I try to take pictures wherever I go. Sometimes I don't feel like it, though. I feel like my lens is slightly outdated. Or is that a skill issue?");
+                }
+                else if (hobby.toLowerCase().contains("coding")) {
+                System.out.println("Cool");
+                }
+                else {
+                System.out.println("ChatBot: Sounds fancy! Always nice to see talented youngsters like you. Just don't give it up.");
             }
 
             System.out.println("ChatBot: Do you have any pets?");
