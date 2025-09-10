@@ -8,7 +8,7 @@ public class Main {
 
         /* To demonstrate a snippet of multi-line code, we often use Multi-Line comments.
         We don't have to give a '//' at every line,
-        which makes you comments less cluttered,
+        which makes your comments less cluttered,
         and more uncluttered.
          */
 
