@@ -23,6 +23,8 @@ public class Main {
             // If the user types either of these words, the conversation starts
             if (userInput.toLowerCase().contains("okay") ||
                     userInput.toLowerCase().contains("fine") ||
+                    userInput.toLowerCase().contains("alright") ||
+                    userInput.toLowerCase().contains("ok") ||
                     userInput.toLowerCase().contains("let's do it")) {
 
                 System.out.println("ChatBot: Great! How may I address you?");
@@ -107,6 +109,7 @@ public class Main {
                 System.out.println("ChatBot: Sounds fancy! Always nice to see talented youngsters like you. Just don't give it up.");
             }
 
+
             System.out.println("ChatBot: Do you have any pets?");
             System.out.print("You: ");
             String pets = scanner.nextLine();
@@ -114,8 +117,21 @@ public class Main {
             if (pets.toLowerCase().contains("cat")) {
                 System.out.println("ChatBot: Oh Lord. I used to throw my cat around the house and squeeze him when I was a kid. That's one thing I'll never understand about myself.");
             } else {
-                System.out.println("ChatBot: Pets are always fun to have, man. Hope they bring happiness to you.");
+                System.out.println("ChatBot: How cool. Pets are always fun to have, man. Hope they bring happiness to you.");
             }
+
+            System.out.println("So, where are you in your academic journey now? Still in school, or university?");
+            System.out.print("You: ");
+            String academicJourney = scanner.nextLine();
+
+            if (academicJourney.toLowerCase().contains("school")) {
+                System.out.println("Oh man, school is a wonderful time, tell you what. Yours peers might tell you otherwise, but that's normal. Always been. You don't listen to them kids, they're on their own path. You've got hobbies, and you've got culture, so make it your best, and it will be the best.");
+            }
+            else if (academicJourney.toLowerCase().contains("university")) {
+                System.out.println("Wow, congrats! I still remember that feeling after breaking out from school, thinking about what to do next, and just running around enjoying every breath of life. My advice to you is, don't be late to class, and finish your assignments on time. I struggled with that a lot back in my day. Take it from me, and carry it throughout.");
+            }
+
+
         }
 
         scanner.close();
